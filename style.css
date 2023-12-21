@@ -495,3 +495,79 @@ footer{
 #AYCE_menu {
   margin-top: 80px;
 }
+
+
+
+
+
+/* CAREERS */
+#careers_page {
+  background-image: url('./assets/careers_img.jpeg');
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.position__container {
+  margin-top: 80px;
+  font-weight: 300;
+  display: flex;
+  gap: 24px;
+
+}
+
+.position_name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.position {
+  padding: 8px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.position_info {
+  text-align: center;
+  max-width: 300px;
+}
+
+.contact--container {
+  padding: 0 0 6rem 0;
+}
+
+.contact_para {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 32px;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__email--link,
+.contact__call--link {
+  padding: 8px 32px;
+  background-color: var(--color-dark_green);
+  color: #FFF;
+  margin: 0 8px;
+}
+
+.contact__email--link {
+  margin-bottom: 16px;
+}
+
+
+
