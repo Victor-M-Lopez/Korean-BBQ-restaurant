@@ -577,4 +577,36 @@ footer{
 .pork_meat--container {
   margin-top: 10%;
   border: 1px solid #000;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img--wrapper {
+  border-radius: 100%;
+  width: 100%;
+  max-width: 200px;
+  overflow: hidden;
+  height: 200px
+}
+
+.meat--img {
+  width: 100%;
+  scale: 1.5;
+}
+
+.meat--box {
+  width: 100%;
+  max-width: calc(100% / 4);
+  height: 100%;
+  max-height: 200px;
+  margin: 16px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meat_name {
+  text-align: center;
 }
