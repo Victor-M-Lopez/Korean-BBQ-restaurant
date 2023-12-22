@@ -574,8 +574,13 @@ footer{
 
 
 /* MEATS */
-.pork_meat--container {
-  margin-top: 10%;
+.pork_meat--container,
+.beef_meat--container {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  right: 10px;
+
   border: 1px solid #000;
 
   display: flex;
@@ -592,7 +597,7 @@ footer{
 
 .meat--img {
   width: 100%;
-  scale: 1.5;
+  scale: 1.8;
 }
 
 .meat--box {
@@ -610,3 +615,21 @@ footer{
 .meat_name {
   text-align: center;
 }
+
+.meats_btn--wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.type-meat--btn {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.beef_meat--container {
+  display: none;
+}
+
