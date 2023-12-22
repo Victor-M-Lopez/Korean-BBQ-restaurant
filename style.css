@@ -575,13 +575,13 @@ footer{
 
 /* MEATS */
 .pork_meat--container,
-.beef_meat--container {
+.beef_meat--container,
+.chicken_meat--container,
+.seafood_meat--container {
   position: absolute;
   top: 30%;
   left: 10px;
   right: 10px;
-
-  border: 1px solid #000;
 
   display: flex;
   flex-wrap: wrap;
@@ -623,13 +623,36 @@ footer{
   gap: 32px;
 }
 
-.type-meat--btn {
+.type-pork--btn,
+.type-beef--btn, 
+.type-chicken--btn, 
+.type-seafood--btn {
   border: none;
   background-color: transparent;
   font-size: 16px;
+  font-weight: 300;
 }
 
-.beef_meat--container {
+.meats_btn--wrapper button:hover {
+  border-bottom: 2px solid var(--color-dark_green);
+  border-top: 2px solid var(--color-dark_green);
+}
+
+.chicken_meat--container,
+.seafood_meat--container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-hover--effect {
+  border-bottom: 2px solid var(--color-dark_green);
+  border-top: 2px solid var(--color-dark_green);
+}
+
+.beef_meat--container,
+.chicken_meat--container,
+.seafood_meat--container {
   display: none;
 }
+
 
