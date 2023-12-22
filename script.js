@@ -73,3 +73,12 @@ function displaySeafood() {
   chickenBtn.classList.remove('button-hover--effect');
   beefBtn.classList.remove('button-hover--effect');
 }
+
+
+let meatImage = document.querySelector('.meat--box');
+let bodyBackground = document.getElementById('meat_page--body');
+
+function moreInfo() {
+  meatImage.classList.add('more_info--effect');
+  bodyBackground.style.filter = 'brightness(0.8)'
+}
