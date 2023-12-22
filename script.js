@@ -20,17 +20,35 @@ function navScroll() {
 
 const porkContainer = document.querySelector('.pork_meat--container');
 const beefContainer = document.querySelector('.beef_meat--container');
+const chickenContainer = document.querySelector('.chicken_meat--container');
+const seaFoodContainer = document.querySelector('.seafood_meat--container');
 
 
 
 function displayPork() {
   porkContainer.style.display = 'flex';
   beefContainer.style.display = 'none';
+  chickenContainer.style.display = 'none';
+  seaFoodContainer.style.display = 'none';
 }
 
 function displayBeef() {
-  porkContainer.style.display = 'none';
   beefContainer.style.display = 'flex';
-  beefContainer.style.opacity = '1';
-  
+  porkContainer.style.display = 'none';
+  chickenContainer.style.display = 'none';
+  seaFoodContainer.style.display = 'none';
+}
+
+function displayChicken() {
+  chickenContainer.style.display = "flex";
+  porkContainer.style.display = 'none';
+  beefContainer.style.display = 'none'; 
+  seaFoodContainer.style.display = 'none';
+}
+
+function displaySeafood() {
+  seaFoodContainer.style.display = 'flex';
+  chickenContainer.style.display = "none";
+  porkContainer.style.display = 'none';
+  beefContainer.style.display = 'none'; 
 }
