@@ -13,10 +13,10 @@ function navScroll() {
   }
 }
 
-// let meatBtn = document.querySelector('.type-pork--btn');
-// let beefBtn = document.querySelector('.type-beef--btn');
-// let chickenBtn = document.querySelector('.type-chicken--btn');
-// let seaFoodBtn = document.querySelector('.type-seafood--btn');
+let porkBtn = document.querySelector('.type-pork--btn');
+let beefBtn = document.querySelector('.type-beef--btn');
+let chickenBtn = document.querySelector('.type-chicken--btn');
+let seaFoodBtn = document.querySelector('.type-seafood--btn');
 
 const porkContainer = document.querySelector('.pork_meat--container');
 const beefContainer = document.querySelector('.beef_meat--container');
@@ -30,6 +30,11 @@ function displayPork() {
   beefContainer.style.display = 'none';
   chickenContainer.style.display = 'none';
   seaFoodContainer.style.display = 'none';
+  
+  porkBtn.classList.add('button-hover--effect');
+  beefBtn.classList.remove('button-hover--effect');
+  chickenBtn.classList.remove('button-hover--effect');
+  seaFoodBtn.classList.remove('button-hover--effect');
 }
 
 function displayBeef() {
@@ -37,6 +42,12 @@ function displayBeef() {
   porkContainer.style.display = 'none';
   chickenContainer.style.display = 'none';
   seaFoodContainer.style.display = 'none';
+  
+  beefBtn.classList.add('button-hover--effect');
+  porkBtn.classList.remove('button-hover--effect');
+  seaFoodBtn.classList.remove('button-hover--effect');
+  chickenBtn.classList.remove('button-hover--effect');
+  
 }
 
 function displayChicken() {
@@ -44,6 +55,11 @@ function displayChicken() {
   porkContainer.style.display = 'none';
   beefContainer.style.display = 'none'; 
   seaFoodContainer.style.display = 'none';
+  
+  chickenBtn.classList.add('button-hover--effect');
+  porkBtn.classList.remove('button-hover--effect');
+  seaFoodBtn.classList.remove('button-hover--effect');
+  beefBtn.classList.remove('button-hover--effect');
 }
 
 function displaySeafood() {
@@ -51,4 +67,9 @@ function displaySeafood() {
   chickenContainer.style.display = "none";
   porkContainer.style.display = 'none';
   beefContainer.style.display = 'none'; 
+  
+  seaFoodBtn.classList.add('button-hover--effect');
+  porkBtn.classList.remove('button-hover--effect');
+  chickenBtn.classList.remove('button-hover--effect');
+  beefBtn.classList.remove('button-hover--effect');
 }
