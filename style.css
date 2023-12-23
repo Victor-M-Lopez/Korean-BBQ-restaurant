@@ -565,7 +565,7 @@ footer{
 }
 
 .menu_link {
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
   background-color: var(--color-dark_green);
   color: #FFF;
   padding: 4px;
