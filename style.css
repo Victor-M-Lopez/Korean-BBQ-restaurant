@@ -805,7 +805,7 @@ footer{
   }
 
   .about_us__info--container {
-    top: 50%;
+    top: 55%;
     left: 24px;
     right: 24px;
   }
@@ -916,6 +916,10 @@ footer{
 @media (max-width: 450px) {
   .landing_page--title {
     font-size: 30px;
+  }
+
+  .about_us--img {
+    height: 88vh;
   }
 }
 
