@@ -82,3 +82,11 @@ function moreInfo() {
   meatImage.classList.add('more_info--effect');
   bodyBackground.style.filter = 'brightness(0.8)'
 }
+
+function openMenu() {
+  document.body.classList += " menu--open" 
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu--open')
+}

@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/2919964776.js" crossorigin="anonymous"></script>
   <script src="./script.js" defer></script>
+  <script src="https://kit.fontawesome.com/2919964776.js" crossorigin="anonymous"></script>
   <title>DON Korean BBQ</title>
 </head>
 <body>
@@ -26,7 +27,36 @@
           <li><a href="./careers.html" class="nav__link">JOIN US</a></li>
         </ul>
 
-        <button class="nav--btn">Seoul Blues Cafe</button>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars hamburger__menu"></i>
+        </button>
+
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times x__btn"></i>
+          </button>
+  
+          <ul>
+            <li class="menu__list">
+              <a href="#landing_page" class="menu__link" onclick="closeMenu()">HOME</a>
+            </li>
+
+            <li class="menu__list">
+              <a href="./index.html#about_us" class="menu__link" onclick="closeMenu()">ABOUT US</a>
+            </li>
+
+            <li class="menu__list">
+              <a href="./menu.html" class="menu__link" onclick="closeMenu()">MENU</a>
+            </li>
+            <li class="menu__list">
+              <a href="#reservations" class="menu__link" onclick="closeMenu()">RESERVATIONS</a>
+            </li>
+
+            <li class="menu__list">
+              <a href="./careers.html" class="menu__link" onclick="closeMenu()">CAREERS</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
     </nav>
@@ -36,7 +66,7 @@
     </video>
 
     <div class="landing_page__info--container">
-      <h1>DON KOREAN BBQ</h1>
+      <h1 class="landing_page--title">DON KOREAN BBQ</h1>
       <p>
         a new retro Korean restaurant concept where
         authentic Korean BBQ and Korean drinks bring 
@@ -100,7 +130,7 @@
 
   <section id="offerings">
     <div class="container">
-      <div class="row">
+      <div class="row offerings_row">
         <h2 class="section__title">What We Offer</h2>
         <p class="section__sub_heading">
           Explore a Wide Range of Delicious 
@@ -216,7 +246,7 @@
 
   <footer>
     <div class="container">
-      <div class="row">
+      <div class="row footer_row">
         <div class="footer__links--container">
 
           <div class="logo__socials__container">
@@ -237,23 +267,25 @@
             </figure>
           </div>
 
-          <ul class="directory__list">
-            <h3 class="footer__link--title">Directory</h3>
-            <li><a href="#landing_page">Home</a></li>
-            <li><a href="#locations">Locations</a></li>
-            <li><a href="#about_us">About Us</a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="#reservations">Reservations</a></li>
-            <li><a href="./careers.html">Join Us</a></li>
-          </ul>
-          
-          <ul class="hours__open--list">
-            <h3 class="footer__link--title">Hours Open</h3>
-            <li>SUN - THUR</li>
-            <li>11:00 am - 12:00 am</li>
-            <li class="hours__open--list--li">FRI - SAT</li>
-            <li>11:00 am - 2:00 am</li>
-          </ul>
+          <div class="restaurant_footer--container">
+            <ul class="directory__list">
+              <h3 class="footer__link--title">Directory</h3>
+              <li><a href="#landing_page">Home</a></li>
+              <li><a href="#locations">Locations</a></li>
+              <li><a href="#about_us">About Us</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="#reservations">Reservations</a></li>
+              <li><a href="./careers.html">Join Us</a></li>
+            </ul>
+            
+            <ul class="hours__open--list">
+              <h3 class="footer__link--title">Hours Open</h3>
+              <li>SUN - THUR</li>
+              <li>11:00 am - 12:00 am</li>
+              <li class="hours__open--list--li">FRI - SAT</li>
+              <li>11:00 am - 2:00 am</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

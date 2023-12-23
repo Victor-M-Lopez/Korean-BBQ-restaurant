@@ -23,7 +23,36 @@
         <li><a href="./careers.html" class="nav__link">CAREERS</a></li>
       </ul>
 
-      <button class="nav--btn">Seoul Blues Cafe</button>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars hamburger__menu"></i>
+      </button>
+
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times x__btn"></i>
+        </button>
+
+        <ul>
+          <li class="menu__list">
+            <a href="./index.html" class="menu__link" onclick="closeMenu()">HOME</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="./index.html#about_us" class="menu__link" onclick="closeMenu()">ABOUT US</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="./menu.html" class="menu__link" onclick="closeMenu()">MENU</a>
+          </li>
+          <li class="menu__list">
+            <a href="./index.html#reservations" class="menu__link" onclick="closeMenu()">RESERVATIONS</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="./careers.html" class="menu__link" onclick="closeMenu()">CAREERS</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 

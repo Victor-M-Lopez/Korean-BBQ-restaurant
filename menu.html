@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/2919964776.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
   <title>DON JBBQ | meats</title>
 </head>
 <body>
@@ -22,7 +23,36 @@
         <li><a href="./careers.html" class="nav__link">CAREERS</a></li>
       </ul>
 
-      <button class="nav--btn">Seoul Blues Cafe</button>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars hamburger__menu"></i>
+      </button>
+
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times x__btn"></i>
+        </button>
+
+        <ul>
+          <li class="menu__list">
+            <a href="./index.html" class="menu__link" onclick="closeMenu()">HOME</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="./index.html#about_us" class="menu__link" onclick="closeMenu()">ABOUT US</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="./menu.html" class="menu__link" onclick="closeMenu()">MENU</a>
+          </li>
+          <li class="menu__list">
+            <a href="./index.html#reservations" class="menu__link" onclick="closeMenu()">RESERVATIONS</a>
+          </li>
+
+          <li class="menu__list">
+            <a href="./careers.html" class="menu__link" onclick="closeMenu()">CAREERS</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -84,7 +114,7 @@
 
   <footer>
     <div class="container">
-      <div class="row">
+      <div class="row footer_row">
         <div class="footer__links--container">
 
           <div class="logo__socials__container">
@@ -104,30 +134,26 @@
               <i class="fa-brands fa-yelp footer__socials"></i>
             </figure>
           </div>
-            
-            <ul class="restaurants__links">
-            <h3>Locations</h3>
-            <li><a href="./index.html#locations">Wheaton</a></li>
-            <li><a href="./index.html#locations">Annapolis</a></li>
-            <li><a href="./index.html#locations">Soul Blues Annapolis</a></li>
-          </ul>
 
-          <ul class="directory__list">
-            <h3 class="footer__link--title">Directory</h3>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./index.html#about_us">About Us</a></li>
-            <li><a href="./menu.html">Menu</a></li>
-            <li><a href="./index.html#reservations">Reservations</a></li>
-            <li><a href="./careers.html">Careers</a></li>
-          </ul>
-          
-          <ul class="hours__open--list">
-            <h3 class="footer__link--title">Hours Open</h3>
-            <li>SUN - THUR</li>
-            <li>11:00 am - 12:00 am</li>
-            <li class="hours__open--list--li">FRI - SAT</li>
-            <li>11:00 am - 2:00 am</li>
-          </ul>
+          <div class="restaurant_footer--container">
+            <ul class="directory__list">
+              <h3 class="footer__link--title">Directory</h3>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./index.html#locations">Locations</a></li>
+              <li><a href="./index.html#about_us">About Us</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./index.html#reservations">Reservations</a></li>
+              <li><a href="./careers.html">Join Us</a></li>
+            </ul>
+            
+            <ul class="hours__open--list">
+              <h3 class="footer__link--title">Hours Open</h3>
+              <li>SUN - THUR</li>
+              <li>11:00 am - 12:00 am</li>
+              <li class="hours__open--list--li">FRI - SAT</li>
+              <li>11:00 am - 2:00 am</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
