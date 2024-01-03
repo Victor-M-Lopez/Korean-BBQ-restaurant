@@ -115,7 +115,7 @@ nav,
 }
 
 .landing_page--logo {
-  width: 40px;
+  width: 50px;
   padding-top: 8px;
   margin-right: 16px;
 }
@@ -159,8 +159,13 @@ nav,
 
 .landing_page__info--container {
   position: absolute;
-  top: 30%;
-  left: 4%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--color-darker_white);
 }
 
@@ -251,6 +256,8 @@ nav,
 .btn__list {
   margin-top: 24px;
 }
+
+
 
 
 
