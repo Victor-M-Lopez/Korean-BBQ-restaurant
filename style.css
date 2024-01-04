@@ -160,8 +160,9 @@ nav,
 .landing_page__info--container {
   position: absolute;
   top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  right: 0;
+  transform: translate(0, -50%);
 
   display: flex;
   flex-direction: column;
@@ -173,6 +174,8 @@ nav,
   color: #FFF;
   font-size: 80px;
   font-weight: 100;
+  width: 100%;
+  text-align: center;
 }
 
 .landing_page__info--container > p {
@@ -445,89 +448,6 @@ footer{
   background-color: var(--color-dark_green);
 }
 
-.footer__links--container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.restaurant_footer--container {
-  display: flex;
-  max-width: 400px;
-  width: 100%;
-  justify-content: space-between;
-
-}
-
-.footer__link--title {
-  margin-bottom: 16px;
-}
-
-.image__wrapper {
-  border: 1px solid #FFF;
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo__socials__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-.footer__logo {
-  width: 50%;
-}
-
-.directory__list,
-.directory__list a,
-.hours__open--list,
-.hours__open--list a,
-.restaurants__links,
-.restaurants__links a {
-  color: #FFF;
-}
-
-.hours__open--list--li {
-  margin-top: 16px;
-}
-
-.restaurants__links {
-  margin-bottom: 32px;
-}
-
-.restaurants__links h3 {
-  margin-bottom: 16px;
-}
-
-.cafe__links h3 {
-  margin-bottom: 16px;
-}
-
-.footer__links--container li {
-  margin-bottom: 8px;
-}
-
-
-.footer__socials {
-  color: #FFF;
-}
-
-.socials--wrapper {
-  border: 1px solid #FFF;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-}
-
 .creator,
 .copyright {
   text-align: center;
@@ -798,6 +718,10 @@ footer{
     font-size: 60px;
   }
 
+  .landing_page--main--logo {
+    width: 120px;
+  }
+
   .landing_page__info--container > p {
     max-width: 520px;
     font-size: 16px;
@@ -867,6 +791,10 @@ footer{
 @media (max-width: 670px) {
   .landing_page--title {
     font-size: 40px;
+  }
+
+  .landing_page--main--logo {
+    width: 80px;
   }
 
   .landing_page__info--container > p {
