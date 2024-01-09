@@ -173,7 +173,7 @@ nav,
 .landing_page--title {
   color: #FFF;
   font-size: 80px;
-  font-weight: 100;
+  font-weight: 300;
   width: 100%;
   text-align: center;
 }
@@ -443,10 +443,50 @@ nav,
 }
 
 
+
+
+
+
 /* FOOTER */
-footer{
-  background-color: var(--color-dark_green);
+footer {
+  background-color: #000;
 }
+
+.footer_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social_media_links--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_logo--img {
+  border: 5px solid #FFF;
+  border-radius: 100px;
+  margin-bottom: 32px;
+}
+
+.footer_icon {
+  border: 1px solid #FFF;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_links--container {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .creator,
 .copyright {
@@ -815,21 +855,6 @@ footer{
 
   .section__sub_heading {
     max-width: 300px;
-  }
-
-  .footer__links--container {
-    flex-direction: column-reverse;
-  }
-
-  .restaurant_footer--container {
-    max-width: 100%;
-    justify-content: center;
-    gap: 20%;
-    text-align: center;
-  }
-
-  .logo__socials__container {
-    margin-top: 80px;
   }
 
   #about_us p {
