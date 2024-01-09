@@ -471,6 +471,16 @@ footer {
 }
 
 .footer_icon {
+  color: #FFF;
+}
+
+.social_links--container {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social_links--container a {
   border: 1px solid #FFF;
   border-radius: 100px;
   width: 40px;
@@ -481,10 +491,8 @@ footer {
   justify-content: center;
 }
 
-.social_links--container {
-  width: 200px;
-  display: flex;
-  justify-content: space-between;
+.social_links--container a:hover {
+  background-color: var(--color-dark_green);
 }
 
 
