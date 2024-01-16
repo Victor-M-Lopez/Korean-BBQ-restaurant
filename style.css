@@ -144,7 +144,8 @@ nav,
   border-top: 2px solid transparent;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.footer_link:hover {
   border-bottom: 2px solid var(--color-dark_green);
   border-top: 2px solid var(--color-dark_green);
 }
@@ -449,6 +450,7 @@ nav,
 
 /* FOOTER */
 footer {
+  position: relative;
   background-color: #000;
 }
 
@@ -462,6 +464,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 50;
 }
 
 .footer_logo--img {
@@ -510,6 +513,55 @@ footer {
   margin-bottom: 16px;
 }
 
+.footer_links__container {
+  margin-top: 32px;
+
+  display: flex;
+  gap: 100px;
+  z-index: 50;
+}
+
+.footer_links__container h3 {
+  color: #FFF;
+  margin-bottom: 16px;
+}
+
+.directory_list li,
+.restaurant_hours li {
+  margin-bottom: 8px;
+}
+
+.footer_link,
+.hours_operation_list {
+  color: #FFF;
+}
+
+.restaurant_hours {
+  margin-bottom: 32px;
+}
+
+.fire_img {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+  width: 200px;
+}
+
+.MD_outline_img {
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  right: 30px;
+  transform: rotate(45deg);
+}
+
+.shot_glasses_img {
+  position: absolute;
+  width: 200px;
+  top: 150px;
+  left: 30px;
+
+}
 
 
 
@@ -882,6 +934,26 @@ footer {
 
   .section__title {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer_links__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fire_img {
+    width: 100px;
+  }
+
+  .shot_glasses_img {
+    width: 100px;
+  }
+
+  .MD_outline_img {
+    top: 50%;
+    width: 100px;
   }
 }
 
