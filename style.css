@@ -354,6 +354,7 @@ nav,
 .sides__link,
 .meats__link {
   transition: all 300ms ease;
+  border: none;
 }
 
 .bar__link:hover,
