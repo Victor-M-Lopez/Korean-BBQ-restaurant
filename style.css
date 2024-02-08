@@ -337,8 +337,10 @@ nav,
 }
 
 .image__para {
-  max-width: 250px;
+  max-width: 300px;
   font-weight: 300;
+  font-size: 16px;
+  text-align: left;
 }
 
 .options--box--overlay {
@@ -853,7 +855,8 @@ footer {
   }
 
   .image__para {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
   }
 
   .about_us__info--container {
@@ -905,6 +908,10 @@ footer {
 
   .position {
     width: 100%;
+  }
+
+  .image__para {
+    text-align: left;
   }
 }
 
