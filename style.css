@@ -448,6 +448,56 @@ nav,
 
 
 
+/* Seoul Blues */
+#seoul_blues {
+  position: relative;
+}
+
+.seoul_blues--container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.seoul_blues--img--wrapper {
+  position: relative;
+  width: 40%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.seoul_blues--img {
+  position: absolute;
+  width: 90%;
+  display: block;
+}
+
+.seoul_blues--info--container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.seoul_blues-link {
+  margin-top: 32px;
+  width: 220px;
+  padding: 4px 16px;
+  text-align: center;
+  background-color: var(--color-dark_green);
+  color: #FFF;
+}
+
+.seoul_blues--drink {
+  position: absolute;
+  width: 200px;
+  right: 60%;
+  bottom: 30px;
+}
+
+.seoul_blues--para {
+  font-size: 20px;
+  font-weight: 300;
+}
 
 
 
@@ -562,7 +612,6 @@ footer {
   width: 100px;
   right: 24px;
 }
-
 
 
 
