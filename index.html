@@ -143,7 +143,7 @@
 
         <div class="options__container">
 
-          <button class="meats__link" onclick="flipCard()">
+          <button class="meats__link" onclick="displayMeats()">
             <div class="options--box">
               <img src="./assets/food_option--meat.jpeg" alt="" class="options--img">
               <div class="image__info--container">
@@ -156,33 +156,65 @@
               <div class="options--box--overlay"></div>
             </div>
           </button>
+
+          <div class="offering_image--container">
+            <button id="exit_btn" onclick="closeOfferingMenu()">
+              <i class="fas fa-times offering-btn"></i>
+            </button>
+
+            <div class="offering--container--overlay"></div>
             
-          <button class="sides__link">
+            <img src="./assets/meat_offerings.svg" alt="" class="meat_offering">
+          </div>
+
+          
+            
+          <button class="sides__link" onclick="displaySides()">
             <div class="options--box">
               <img src="./assets/food_option--sides.jpeg" alt="" class="options--img">
               <div class="image__info--container">
                 <h4 class="image__title">Beyond the Grill</h4>
                 <p class="image__para">
                   Delight Your Taste Buds with 
-                  Mouthwatering Korean Sides!
+                  Mouthwatering Korean Appetizers!
                 </p>
               </div>
               <div class="options--box--overlay"></div>
             </div>
           </button>
 
-          <button class="bar__link"> 
+          <div class="offering_image--container--2">
+            <button id="exit_btn" onclick="closeAppMenu()">
+              <i class="fas fa-times offering-btn"></i>
+            </button>
+            
+            <div class="offering--container--overlay"></div>
+            
+            <img src="./assets/appetizer_offering.svg" alt="" class="app_offering">
+          </div>
+
+          <button class="bar__link" onclick="displayDrinks()"> 
             <div class="options--box">
               <img src="./assets/food_option--drink.jpeg" alt="" class="options--img">
               <div class="image__info--container">
                 <h4 class="image__title">Good Eats, Good Times</h4>
                 <p class="image__para">
-                  Unwind with Tasty Bar Fare and Exceptional Drinks
+                  Unwind with Exceptional Drinks
                 </p>
               </div>
               <div class="options--box--overlay"></div>
             </div>
           </button>
+
+          <div class="offering_image--container--3">
+            <button id="exit_btn" onclick="closeDrinkMenu()">
+              <i class="fas fa-times offering-btn"></i>
+            </button>
+            
+            <div class="offering--container--overlay"></div>
+            
+            <img src="./assets/drink_offering.svg" alt="" class="drink_offering">
+          </div>
 
           </div>
         </div>

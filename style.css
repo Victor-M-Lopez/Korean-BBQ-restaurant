@@ -303,6 +303,10 @@ nav,
 
 
 /* offerings */
+#offerings {
+  position: relative;
+}
+
 .options__container {
   display: flex;
   justify-content: center;
@@ -334,6 +338,7 @@ nav,
   font-size: 24px;
   margin-bottom: 16px;
   font-weight: 100;
+  text-align: left;
 }
 
 .image__para {
@@ -495,7 +500,7 @@ nav,
 }
 
 .seoul_blues--para {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -740,6 +745,66 @@ footer {
   margin-bottom: 16px;
 }
 
+
+
+
+/* offerings code */
+.offering_image--container,
+.offering_image--container--2,
+.offering_image--container--3 {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.offering--container--overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.app_offering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 650px;
+  transform: translate(-50%, -50%);
+}
+
+.meat_offering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 650px;
+  transform: translate(-50%, -50%);
+}
+
+.drink_offering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 650px;
+  transform: translate(-50%, -50%);
+}
+
+
+
+#exit_btn {
+  position: absolute;
+  top: 6%;
+  right: 50px;
+  z-index: 99;
+  border: none;
+  background-color: transparent;
+}
+
+.offering-btn {
+  font-size: 32px;
+  color: #FFF;
+}
 
 
 

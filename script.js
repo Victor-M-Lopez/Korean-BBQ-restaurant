@@ -1,7 +1,6 @@
 window.onscroll = function() {navScroll()};
 
 let navBar = document.getElementById('landing_page--nav');
-let card = document.querySelector('.meats__link');
 
 function navScroll() {
 
@@ -14,13 +13,6 @@ function navScroll() {
   }
 }
 
-
-function flipCard() {
-  card.style.transform = 'rotateY(180deg)';
-  card.style.transition = 'transform 800ms ease';
-}
-
-
 function openMenu() {
   document.body.classList += " menu--open" 
 }
@@ -28,3 +20,65 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('menu--open')
 }
+
+
+
+
+
+meatMenu = document.querySelector('.meat_offering');
+appMenu = document.querySelector('.app_offering');
+
+offeringContainer = document.querySelector('.offering_image--container');
+offeringContainer2 = document.querySelector('.offering_image--container--2');
+offeringContainer3 = document.querySelector('.offering_image--container--3');
+
+function displaySides() {
+  displayContainer2();
+}
+
+function displayMeats() {
+  displayContainer();
+}
+
+function displayDrinks() {
+  displayContainer3();
+}
+
+function displayContainer() {
+  offeringContainer.style.display = 'block';
+}
+
+function closeDisplayContainer() {
+  offeringContainer.style.display = 'none';
+}
+
+function displayContainer2() {
+  offeringContainer2.style.display = 'block';
+}
+
+function closeDisplayContainer2() {
+  offeringContainer2.style.display = 'none';
+}
+
+function displayContainer3() {
+  offeringContainer3.style.display = 'block';
+}
+
+function closeDisplayContainer3() {
+  offeringContainer3.style.display = 'none';
+}
+
+function closeOfferingMenu() {
+  closeDisplayContainer();
+}
+
+function closeAppMenu() {
+  closeDisplayContainer2();
+}
+
+function closeDrinkMenu() {
+  closeDisplayContainer3();
+}
+
+
+
