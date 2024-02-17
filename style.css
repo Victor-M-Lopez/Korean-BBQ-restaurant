@@ -452,7 +452,6 @@ nav,
 }
 
 
-
 /* Seoul Blues */
 #seoul_blues {
   position: relative;
@@ -615,25 +614,27 @@ footer {
   bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .copyright {
   margin-bottom: 24px;
 }
 
-.fire_icon {
-  position: absolute;
-  bottom: 32px;
-  width: 100px;
-  right: 24px;
-}
-
 
 
 /* MEATS PAGE */
-#landing_page--nav--general {
+#landing_page--nav--general,
+#landing_page--nav--general2 {
   background-color: #000;
+}
+
+#landing_page--nav--general {
   height: 130px;
+}
+
+#landing_page--nav--general2 {
+  height: 100px;
 }
 
 .menu_row {
@@ -902,6 +903,43 @@ footer {
   .drink_offering {
     width: 470px;
   }
+
+  .seoul_blues--img--wrapper {
+    width: 100%;
+  }
+
+  .seoul_blues--container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seoul_blues--info--container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .seoul_blues--para {
+    margin-top: 32px;
+  }
+
+  .social_media_links--footer {
+    padding-bottom: 15rem;
+  }
+
+  .footer_logo--img {
+    width: 120px;
+  }
+
+  .restaurant_info--container {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    text-align: center;
+    font-size: 16px;
+  }
 } 
 
 
@@ -950,16 +988,16 @@ footer {
   .section__title {
     font-size: 24px;
   }
+
+  .careers_title {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 500px) {
   .footer_links__container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .fire_img {
-    width: 100px;
   }
 
   .shot_glasses_img {
@@ -997,6 +1035,10 @@ footer {
   .meat_offering,
   .drink_offering {
     width: 360px;
+  }
+
+  .careers_title {
+    font-size: 40px;
   }
 }
 
