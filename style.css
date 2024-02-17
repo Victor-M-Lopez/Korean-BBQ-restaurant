@@ -456,6 +456,8 @@ nav,
 /* Seoul Blues */
 #seoul_blues {
   position: relative;
+  background-color: #2C6D58;
+  color: #FFF;
 }
 
 .seoul_blues--container {
@@ -488,7 +490,15 @@ nav,
   width: 220px;
   padding: 4px 16px;
   text-align: center;
-  background-color: var(--color-dark_green);
+  background-color: #FFF;
+  color: #000;
+  border-radius: 25px;
+  transition: background-color 800ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.seoul_blues-link:hover {
+  background-color: #000;
   color: #FFF;
 }
 
@@ -766,22 +776,8 @@ footer {
   opacity: 0.8;
 }
 
-.app_offering {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 650px;
-  transform: translate(-50%, -50%);
-}
-
-.meat_offering {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 650px;
-  transform: translate(-50%, -50%);
-}
-
+.app_offering,
+.meat_offering,
 .drink_offering {
   position: absolute;
   top: 50%;
@@ -789,8 +785,6 @@ footer {
   max-width: 650px;
   transform: translate(-50%, -50%);
 }
-
-
 
 #exit_btn {
   position: absolute;
@@ -842,12 +836,20 @@ footer {
     height: 80vh;
   }
 
+  .image__title {
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 890px) {
   .options__container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .image__title {
+    text-align: left;
   }
 
   .bar__link,
@@ -887,6 +889,16 @@ footer {
     text-align: left;
   }
 }
+
+@media (max-width: 750px) {
+  .app_offering,
+  .meat_offering,
+  .drink_offering {
+    width: 470px;
+  }
+} 
+
+
 
 @media (max-width: 670px) {
   .landing_page--title {
@@ -952,6 +964,18 @@ footer {
     top: 50%;
     width: 100px;
   }
+
+  .app_offering,
+  .meat_offering,
+  .drink_offering {
+    width: 380px;
+  }
+
+  #exit_btn {
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 450px) {
@@ -961,6 +985,12 @@ footer {
 
   .about_us--img {
     height: 100vh;
+  }
+
+  .app_offering,
+  .meat_offering,
+  .drink_offering {
+    width: 360px;
   }
 }
 
