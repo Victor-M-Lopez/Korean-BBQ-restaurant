@@ -1021,6 +1021,14 @@ footer {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .about_us--img {
+    background-attachment: scroll;
+  }
+
+  footer {
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 450px) {
