@@ -657,6 +657,7 @@ footer {
   z-index: 100;
   display: flex;
   justify-content: center;
+  transition: z-index 300ms ease;
 }
 
 .menu_list {
@@ -1016,7 +1017,7 @@ footer {
   }
 
   #exit_btn {
-    top: 75%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%);
   }
