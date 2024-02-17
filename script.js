@@ -1,6 +1,7 @@
 window.onscroll = function() {navScroll()};
 
 let navBar = document.getElementById('landing_page--nav');
+let menuPicker = document.querySelector('.menus__picker--container');
 
 function navScroll() {
 
@@ -15,10 +16,13 @@ function navScroll() {
 
 function openMenu() {
   document.body.classList += " menu--open" 
+  menuPicker.style.zIndex = '0';
+  
 }
 
 function closeMenu() {
   document.body.classList.remove('menu--open')
+  menuPicker.style.zIndex = '100';
 }
 
 
