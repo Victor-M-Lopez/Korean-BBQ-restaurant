@@ -639,12 +639,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
 }
 
 .menu--img {
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
 }
 
 .menus__picker--container {
@@ -674,8 +673,12 @@ footer {
   margin: 16px 0;
 }
 
-#AYCE_menu {
-  margin-top: 80px;
+#AYCE_menu,
+#Appetizers_menu,
+#Lunch_special_menu,
+#bar_menu,
+#dosirak_menu {
+  padding-top: 130px;
 }
 
 
