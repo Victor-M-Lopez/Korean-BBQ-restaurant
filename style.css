@@ -662,7 +662,6 @@ footer {
 }
 
 .menu_link {
-  border: 1px solid #000;
   background-color: var(--color-dark_green);
   color: #FFF;
   padding: 4px;
@@ -678,11 +677,12 @@ footer {
 #Lunch_special_menu,
 #bar_menu,
 #dosirak_menu,
-#a_la_carte {
+#a_la_carte, 
+#Allergy {
   padding-top: 130px;
 }
 
-#dosirak_menu {
+#Allergy {
   padding-bottom: 130px;
 }
 
@@ -997,6 +997,13 @@ footer {
 
   .careers_title {
     font-size: 50px;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .allergy--img {
+    width: 100%;
   }
 }
 
