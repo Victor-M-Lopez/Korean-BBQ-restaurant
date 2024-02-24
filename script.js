@@ -29,12 +29,12 @@ function closeMenu() {
 
 
 
-meatMenu = document.querySelector('.meat_offering');
-appMenu = document.querySelector('.app_offering');
+let meatMenu = document.querySelector('.meat_offering');
+let appMenu = document.querySelector('.app_offering');
 
-offeringContainer = document.querySelector('.offering_image--container');
-offeringContainer2 = document.querySelector('.offering_image--container--2');
-offeringContainer3 = document.querySelector('.offering_image--container--3');
+let offeringContainer = document.querySelector('.offering_image--container');
+let offeringContainer2 = document.querySelector('.offering_image--container--2');
+let offeringContainer3 = document.querySelector('.offering_image--container--3');
 
 function displaySides() {
   displayContainer2();
@@ -86,3 +86,15 @@ function closeDrinkMenu() {
 
 
 
+// POP UP
+let popUp = document.getElementById('pop_up--container');
+let popUpImg = document.querySelector('.pop_up--img');
+
+setTimeout(function() {
+  popUp.style.visibility = 'visible';
+}, 4000);
+
+function closePopUp() {
+  popUp.style.visibility = 'hidden';
+  popUp.style.opacity = '0';
+}
