@@ -172,7 +172,7 @@ nav,
   color: var(--color-darker_white);
 }
 
-.landing_page--title {
+h1 {
   color: #FFF;
   font-size: 80px;
   font-weight: 300;
@@ -841,7 +841,7 @@ footer {
 
 
 @media (max-width: 955px) {
-  .landing_page--title {
+  h1 {
     font-size: 60px;
   }
 
@@ -976,7 +976,7 @@ footer {
 
 
 @media (max-width: 670px) {
-  .landing_page--title {
+  h1 {
     font-size: 40px;
   }
 
@@ -1069,7 +1069,7 @@ footer {
 }
 
 @media (max-width: 450px) {
-  .landing_page--title {
+  h1 {
     font-size: 30px;
   }
 
