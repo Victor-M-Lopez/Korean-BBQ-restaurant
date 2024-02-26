@@ -172,7 +172,7 @@ nav,
   color: var(--color-darker_white);
 }
 
-h1 {
+.landing_page__info--container > h1 {
   color: #FFF;
   font-size: 80px;
   font-weight: 300;
