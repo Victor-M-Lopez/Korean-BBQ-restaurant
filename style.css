@@ -713,7 +713,7 @@ footer {
 
 /* CAREERS */
 #careers_page {
-  background-image: url('./assets/careers_img.jpeg');
+  background-image: url('./assets/careers_img.webp');
   background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
