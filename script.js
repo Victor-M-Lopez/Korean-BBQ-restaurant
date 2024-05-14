@@ -98,3 +98,6 @@ function closePopUp() {
   popUp.style.visibility = 'hidden';
   popUp.style.opacity = '0';
 }
+
+
+// menu selector for smaller screens
