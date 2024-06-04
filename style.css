@@ -538,6 +538,37 @@ nav,
 
 
 
+/* Weekly Calender */
+.calender--container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+table {
+  border-spacing: 32px;
+  width: 100%;
+}
+
+.calender_container {
+  padding-bottom: 2rem;
+}
+
+.date,
+.weekly_special {
+  border: 1px solid #000;
+  padding: 16px 8px;
+  text-align: center;
+}
+
+.date {
+  margin-right: 32px;
+  background-color: #2C6D58;
+  border: none;
+  color: #fff;
+}
+
+
 /* FOOTER */
 footer {
   position: relative;
@@ -975,6 +1006,15 @@ footer {
     text-align: center;
     font-size: 16px;
   }
+
+  .weekly_special,
+  .date {
+    font-size: 14px;
+  }
+
+  table {
+    border-spacing: 12px;
+  }
 } 
 
 
@@ -1026,6 +1066,11 @@ footer {
 
   .menu_link {
     font-size: 10.8px;
+  }
+
+  .weekly_special,
+  .date {
+    font-size: 12px;
   }
 }
 
