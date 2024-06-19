@@ -1073,6 +1073,10 @@ footer {
   .date {
     font-size: 12px;
   }
+
+  .menu_row {
+    padding: 0 12px;
+  }
 }
 
 
