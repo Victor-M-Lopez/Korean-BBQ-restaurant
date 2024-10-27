@@ -1,0 +1,171 @@
+/* playfair-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/playfair-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/playfair-v2-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* source-serif-4-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/source-serif-4-v8-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-serif-4-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/source-serif-4-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* source-serif-4-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/source-serif-4-v8-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #272e38;
+}
+
+h1,h2,h3,h4 {
+	font-weight: 800;
+	font-family: 'Playfair', sans-serif;
+}
+
+p,a,span,button, li {
+	font-family: 'Source Serif 4', sans-serif;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a {
+	font-family: 'Poppins';
+	font-weight: 200;
+	color: #fff;
+}
+
+.container {
+	padding: 4rem 0;
+}
+
+.row {
+	padding: 0 24px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* nav */
+nav {
+	position: fixed;
+	top: 24px;
+	right: 24px;
+	left: 24px;
+	z-index: 100;
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
+
+.nav_container {
+	padding: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav_list {
+	display: flex;
+	gap: 32px;
+}
+
+.menu_link {
+	color: #000;
+	background-color: #E5D679;
+	padding: 4px 16px;
+	border-radius: 4px;
+}
+
+/* hero */
+#home {
+	position: relative;
+	background-image: url('assets/food_img.jpg');
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+
+.overlay {
+	position: absolute;
+	inset: 0;
+	background-color: #000;
+	opacity: 0.65;
+}
+
+.text_container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.text_container p {
+	text-align: center;
+	margin-bottom: -30px;
+}
+
+.restaurant_name {
+	font-size: 128px;
+	color: #E5D679;
+}
+
+#home_line {
+	position: absolute;
+	bottom: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 98%;
+}
+
+.home_text {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	width: 500px;
+	transform: translateX(-50%);
+	color: #fff;
+	text-align: center;
+}
+
+/* location */
+.location_container {
+	padding: 6rem 0;
+}
+
+.maryland_img {
+	width: 100%;
+}
