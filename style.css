@@ -166,6 +166,42 @@ nav {
 	padding: 6rem 0;
 }
 
+.maryland_img-wrapper {
+	position: relative;
+	width: 100%;
+}
+
 .maryland_img {
 	width: 100%;
+}
+
+.location_text-container {
+	position: absolute;
+	color: #fff;
+	top: 32px;
+	left: 24px;
+}
+
+.heading {
+	margin-bottom: 40px;
+	font-size: 40px;
+}
+
+.location_list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 24px;
+}
+
+.contact_text-container {
+	position: absolute;
+	right: 32px;
+	bottom: 120px;
+	color: #fff;
+}
+
+.contact_text-1 {
+	font-size: 24px;
+	list-style-type: disc;
 }
