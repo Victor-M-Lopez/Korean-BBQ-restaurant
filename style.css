@@ -108,12 +108,21 @@ nav {
 	font-weight: 200;
 }
 
-#home_line {
+.home_squares {
+	bottom: 24px;
+}
+
+.home_squares2 {
+	bottom: 24px;
+}
+
+.home_line {
 	position: absolute;
 	bottom: 24px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 98%;
+	left: 56px;
+	right: 56px;
+	background-color: #fff;
+	height: 1px;
 }
 
 .home_text {
@@ -173,9 +182,12 @@ nav {
 }
 
 /* offering */
+#offering {
+	width: 98%;
+}
+
 #offering,
 #seoul-blues {
-	width: 98%;
 	border-radius: 12px;
 	margin: 0 auto;
 }
@@ -316,6 +328,7 @@ nav {
 
 #seoul-blues {
 	border: 1px solid #fff;
+	width: 75%;
 }
 
 .seoul-text {
@@ -329,4 +342,48 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	color: #fff;
+}
+
+.cafe-link {
+	margin: 24px 0;
+	border: 1px solid #fff;
+	padding: 8px 16px;
+	font-weight: 200;
+}
+
+.seoul_img {
+	width: 30%;
+	border-radius: 16px;
+	margin: 32px 0;
+}
+
+.seoul_text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.footer_row {
+	position: relative;
+}
+
+#footer_squares {
+	position: absolute;
+	left: 24px;
+}
+
+#footer_square2 {
+	position: absolute;
+	right: 24px;
+	transform: rotate(90deg);
+}
+
+.footer_line {
+	position: absolute;
+	top: 56px;
+	left: 56px;
+	right: 56px;
+	height: 1px;
+	background-color: #fff;
 }
