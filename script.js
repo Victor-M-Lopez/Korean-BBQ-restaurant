@@ -1,16 +1,15 @@
 window.onscroll = function() {navScroll()};
 
-let navBar = document.getElementById('landing_page--nav');
-let menuPicker = document.querySelector('.menus__picker--container');
+let navBar = document.querySelector('nav');
 
 function navScroll() {
 
   if (document.body.scrollTo > 150 || document.documentElement.scrollTop > 150) {
-    navBar.className = 'nav_blur';
+    navBar.classList.add('nav_change');
   }
   
   else {
-    navBar.classList.remove('nav_blur');
+    navBar.classList.remove('nav_change');
   }
 }
 
