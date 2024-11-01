@@ -10,6 +10,10 @@ body {
 	background-color: #272e38;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h1,h2,h3,h4 {
 	font-weight: 800;
 	font-family: "Playfair", serif;
@@ -47,7 +51,8 @@ nav {
 	z-index: 100;
 	border: 1px solid #fff;
 	border-radius: 8px;
-	transition: top 300ms ease, background-color 300ms ease;
+	transition: top 300ms ease, background-color 500ms ease-in-out;
+	transition: top 500ms ease, bottom 500ms ease, left 500ms ease, right 500ms ease;
 }
 
 .nav_container {
@@ -67,6 +72,21 @@ nav {
 	background-color: #E5D679;
 	padding: 4px 16px;
 	border-radius: 4px;
+}
+
+.nav_modal-list {
+	position: absolute;
+	top: 30%;
+	right: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 56px;
+	text-align: end;
+	visibility: hidden;
+}
+
+.nav_modal-link {
+	color: #000;
 }
 
 /* hero */
@@ -188,7 +208,7 @@ nav {
 
 /* offering */
 #offering {
-	width: 95%;
+	width: 94%;
 	background-color: #fff;
 }
 
@@ -301,7 +321,7 @@ nav {
 #leaf-2 {
 	position: absolute;
 	top: 300px;
-	left: 300px;
+	right: 50%;
 	z-index: 1;
 }
 
@@ -333,8 +353,14 @@ nav {
 
 #gen_nav {
 	top: 12px;
-	background-color: #272e38;
+	background-color: #fff;
 }
+
+.menu-link,
+.menu_nav-link {
+	color: #000;
+}
+
 
 /* seoul blues */
 #seoul-blues {
@@ -456,9 +482,19 @@ footer {
 
 /* JS manipulated classes */
 .nav_change {
-	background-color: #272e38;
+	background-color: #E5D679;
 	top: 8px;
-	transition: top 300ms ease, background-color 300ms ease;
+	border: none;
+	transition: top 300ms ease, background-color 500ms ease;
+}
+
+.nav_white {
+	transition: color 300ms ease, fill 300ms ease;
+}
+
+.color_change {
+	color: #000;
+	fill: #000;
 }
 
 #hamburger_menu {
@@ -467,6 +503,18 @@ footer {
 
 #hamburger_menu:hover {
 	cursor: pointer;
+}
+
+.nav_view-change {
+	inset: 0;
+	border-radius: 0;
+	border-color: transparent;
+	background-color: #E5D679;
+	transition: inset 500ms ease, border-radius 500ms ease, background-color 500ms ease;
+}
+
+.text_appear {
+	visibility: visible;
 }
 
 /* screen size 1125px */
