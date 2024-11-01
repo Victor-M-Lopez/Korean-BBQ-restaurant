@@ -188,17 +188,14 @@ nav {
 
 /* offering */
 #offering {
-	width: 98%;
+	width: 95%;
+	background-color: #fff;
 }
 
 #offering,
 #seoul-blues {
 	border-radius: 12px;
 	margin: 0 auto;
-}
-
-#offering {
-	background-color: #E5D679;
 }
 
 .heading-2 {
@@ -655,5 +652,9 @@ footer {
 
 	.home_squares, .home_squares2 {
 		width: 32px;
+	}
+
+	.restaurant_name {
+		font-size: 150px;
 	}
 }
