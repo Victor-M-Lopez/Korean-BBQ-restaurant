@@ -28,6 +28,7 @@ let navModalList = document.querySelector('.nav_modal-list');
 
 navBtn.addEventListener('click', function() {
   let navBarElement = navBar.querySelectorAll('.nav_white');
+  
   navBar.classList.toggle('nav_view-change');
   navModalList.classList.toggle('text_appear');
 
