@@ -640,6 +640,10 @@ footer {
 		width: 230px;
 		top: -40px;
 	}
+
+	.menu-size {
+		width: 98%;
+	}
 }
 
 /* 500px */
