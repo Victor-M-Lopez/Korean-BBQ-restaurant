@@ -41,3 +41,23 @@ navBtn.addEventListener('click', function() {
     }
   }
 });
+
+let offerBox = document.querySelector('.offering-wrapper');
+let meatPopUp = document.querySelector('.offering-popup');
+let overlayPopUp = document.querySelector('.offering_popup-overlay');
+let exitBtn = document.querySelector('.exit_btn');
+
+offerBox.addEventListener('click', function() {
+  meatPopUp.classList.add('popup_appear');
+  overlayPopUp.classList.add('overlay-popup');
+});
+
+exitBtn.addEventListener('click', function() {
+  meatPopUp.classList.remove('popup_appear');
+  overlayPopUp.classList.remove('overlay-popup');
+})
+
+overlayPopUp.addEventListener('click', function() {
+  meatPopUp.classList.remove('popup_appear');
+  overlayPopUp.classList.remove('overlay-popup');
+})

@@ -48,7 +48,7 @@ nav {
 	top: 24px;
 	right: 24px;
 	left: 24px;
-	z-index: 100;
+	z-index: 90;
 	border: 1px solid #fff;
 	border-radius: 8px;
 	transition: top 300ms ease, background-color 500ms ease-in-out;
@@ -207,14 +207,16 @@ nav {
 }
 
 /* offering */
-#offering {
-	width: 94%;
+#offering,
+#careers {
 	background-color: #fff;
 }
 
 #offering,
 #seoul-blues,
 #careers {
+	position: relative;
+	width: 95%;
 	border-radius: 12px;
 	margin: 0 auto;
 }
@@ -243,6 +245,10 @@ nav {
 	width: 500px;
 	overflow: hidden;
 	border-radius: 8px;
+}
+
+.offering-wrapper:hover {
+	cursor: pointer;
 }
 
 .offering_img {
@@ -275,6 +281,41 @@ nav {
 	width: 300px;
 }
 
+.offering-popup {
+	position: fixed;
+	width: 600px;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 500ms ease;
+}
+
+.offering_popup-overlay {
+	position: fixed;
+	inset: 0;
+	background-color: #000;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 300ms ease;
+}
+
+.exit_btn {
+	position: absolute;
+	right: 32px;
+	top: 32px;
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	font-size: 32px;
+}
+
+.exit_btn:hover {
+	cursor: pointer;
+}
 /* about */
 #about {
 	position: relative;
@@ -366,7 +407,6 @@ nav {
 /* seoul blues */
 #seoul-blues {
 	border: 1px solid #fff;
-	width: 75%;
 }
 
 .seoul-container {
@@ -482,15 +522,10 @@ footer {
 }
 
 /* careers */
-#careers {
-	width: 98%;
-	background-color: #E5D679;
-}
-
 .careers-wrapper {
 	border: 1px solid #000;
 	width: 300px;
-	height: 300px;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -519,7 +554,7 @@ footer {
 }
 
 .careers-btn-wrapper a {
-	background-color: #fff;
+	background-color: #E5D679;
 	padding: 8px 32px;
 	color: #000;
 	border-radius: 4px;
@@ -562,6 +597,16 @@ footer {
 	visibility: visible;
 }
 
+.popup_appear {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 500ms ease;
+}
+
+.overlay-popup {
+	visibility: visible;
+	opacity: 0.8;
+}
 /* screen size 1125px */
 
 @media (max-width: 1125px) {
@@ -656,11 +701,6 @@ footer {
 	.seoul_img {
 		width: 75%;
 	}
-
-	#seoul-blues {
-		width: 88%;
-	}
-
 }
 
 /* 740px */
