@@ -55,10 +55,10 @@ let appPopUp = document.querySelector('.app-popup');
 let drinkBox = document.querySelector('.drink-wrapper');
 let drinkPopUp = document.querySelector('.drink-popup');
 
-let genPopUp = document.querySelectorAll('.offering-popup');
-
 let overlayPopUp = document.querySelector('.offering_popup-overlay');
 let exitBtn = document.querySelector('.exit_btn');
+
+let genPopUp = document.querySelectorAll('.offering-popup');
 
 meatBox.addEventListener('click', function() {
   meatPopUp.classList.add('popup_appear');
