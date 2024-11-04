@@ -48,7 +48,7 @@ nav {
 	top: 24px;
 	right: 24px;
 	left: 24px;
-	z-index: 90;
+	z-index: 95;
 	border: 1px solid #fff;
 	border-radius: 8px;
 	transition: top 300ms ease, background-color 500ms ease-in-out;
@@ -124,7 +124,6 @@ nav {
 }
 
 .restaurant_name {
-	font-size: 200px;
 	color: #E5D679;
 	font-weight: 200;
 }
@@ -729,6 +728,10 @@ footer {
 	.menu-size {
 		width: 98%;
 	}
+
+	.offering-popup {
+		width: 400px;
+	}
 }
 
 /* 500px */
@@ -793,5 +796,9 @@ footer {
 
 	.restaurant_name {
 		font-size: 150px;
+	}
+
+	.offering-popup {
+		width: 90%;
 	}
 }

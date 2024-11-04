@@ -42,22 +42,56 @@ navBtn.addEventListener('click', function() {
   }
 });
 
-let offerBox = document.querySelector('.offering-wrapper');
-let meatPopUp = document.querySelector('.offering-popup');
+let meatBox = document.querySelector('.meat-wrapper');
+let meatPopUp = document.querySelector('.meat-popup');
+
+let appBox = document.querySelector('.app-wrapper');
+let appPopUp = document.querySelector('.app-popup');
+
+let drinkBox = document.querySelector('.drink-wrapper');
+let drinkPopUp = document.querySelector('.drink-popup');
+
+let genPopUp = document.querySelectorAll('.offering-popup');
+
 let overlayPopUp = document.querySelector('.offering_popup-overlay');
 let exitBtn = document.querySelector('.exit_btn');
 
-offerBox.addEventListener('click', function() {
+meatBox.addEventListener('click', function() {
   meatPopUp.classList.add('popup_appear');
   overlayPopUp.classList.add('overlay-popup');
 });
 
-exitBtn.addEventListener('click', function() {
-  meatPopUp.classList.remove('popup_appear');
-  overlayPopUp.classList.remove('overlay-popup');
+appBox.addEventListener('click', function() {
+  appPopUp.classList.add('popup_appear');
+  overlayPopUp.classList.add('overlay-popup');
 })
+
+drinkBox.addEventListener('click', function() {
+  drinkPopUp.classList.add('popup_appear');
+  overlayPopUp.classList.add('overlay-popup');
+})
+
+exitBtn.addEventListener('click', function() {
+  for (let i = 0; i < genPopUp.length; i++) {
+    if (genPopUp[i].classList.contains('meat-popup')) {
+      meatPopUp.classList.remove('popup_appear');
+    }
+    else if (genPopUp[i].classList.contains('app-popup')) {
+      appPopUp.classList.remove('popup_appear');
+    }
+    else if (genPopUp[i].classList.contains('drink-popup')) {
+      drinkPopUp.classList.remove('popup_appear');
+    }
+    // else return 0;
+  }
+  overlayPopUp.classList.remove('overlay-popup');
+});
 
 overlayPopUp.addEventListener('click', function() {
   meatPopUp.classList.remove('popup_appear');
   overlayPopUp.classList.remove('overlay-popup');
 })
+
+
+
+// make sure make a function that will be used on multiple variables.
