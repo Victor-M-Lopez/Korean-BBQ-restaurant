@@ -4,6 +4,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
@@ -245,9 +250,18 @@ nav {
 	overflow: hidden;
 	border-radius: 8px;
 }
+.meat-wrapper,
+.app-wrapper,
+.drink-wrapper {
+	transition: transform 500ms ease, box-shadow 400ms ease;
+}
 
-.offering-wrapper:hover {
+.meat-wrapper:hover,
+.app-wrapper:hover,
+.drink-wrapper:hover {
 	cursor: pointer;
+	transform: translate(4px, -8px);
+	box-shadow: 2px 8px 10px 0px #474747;
 }
 
 .offering_img {
@@ -730,7 +744,7 @@ footer {
 	}
 
 	.offering-popup {
-		width: 400px;
+		width: 95%;
 	}
 }
 
@@ -796,9 +810,5 @@ footer {
 
 	.restaurant_name {
 		font-size: 150px;
-	}
-
-	.offering-popup {
-		width: 90%;
 	}
 }

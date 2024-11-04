@@ -22,6 +22,8 @@ function navScroll() {
   
 }
 
+// nav change when using hamburger menu
+
 
 let navBtn = document.getElementById('hamburger_menu');
 let navModalList = document.querySelector('.nav_modal-list');
@@ -31,7 +33,7 @@ navBtn.addEventListener('click', function() {
   
   navBar.classList.toggle('nav_view-change');
   navModalList.classList.toggle('text_appear');
-
+  
   for( let i = 0; i < navBarElement.length; i++) {
     if (document.body.scrollTo > 150 || document.documentElement.scrollTop > 150) {
       navBarElement[i].classList.add('color_change');
@@ -41,6 +43,10 @@ navBtn.addEventListener('click', function() {
     }
   }
 });
+
+
+// offering section for pop ups
+let offerBox = document.querySelectorAll('.offering-wrapper');
 
 let meatBox = document.querySelector('.meat-wrapper');
 let meatPopUp = document.querySelector('.meat-popup');
@@ -57,21 +63,26 @@ let overlayPopUp = document.querySelector('.offering_popup-overlay');
 let exitBtn = document.querySelector('.exit_btn');
 
 meatBox.addEventListener('click', function() {
-  meatPopUp.classList.add('popup_appear');
-  overlayPopUp.classList.add('overlay-popup');
+  openPopUp();
 });
 
 appBox.addEventListener('click', function() {
-  appPopUp.classList.add('popup_appear');
-  overlayPopUp.classList.add('overlay-popup');
+  openPopUp();
 })
 
 drinkBox.addEventListener('click', function() {
-  drinkPopUp.classList.add('popup_appear');
-  overlayPopUp.classList.add('overlay-popup');
+  openPopUp();
 })
 
 exitBtn.addEventListener('click', function() {
+  exitPopUp();
+});
+
+overlayPopUp.addEventListener('click', function() {
+  exitPopUp();
+});
+
+function exitPopUp() {
   for (let i = 0; i < genPopUp.length; i++) {
     if (genPopUp[i].classList.contains('meat-popup')) {
       meatPopUp.classList.remove('popup_appear');
@@ -82,16 +93,36 @@ exitBtn.addEventListener('click', function() {
     else if (genPopUp[i].classList.contains('drink-popup')) {
       drinkPopUp.classList.remove('popup_appear');
     }
-    // else return 0;
+    else return 0;
   }
   overlayPopUp.classList.remove('overlay-popup');
-});
+}
 
-overlayPopUp.addEventListener('click', function() {
-  meatPopUp.classList.remove('popup_appear');
-  overlayPopUp.classList.remove('overlay-popup');
-})
-
-
+function openPopUp() {
+  for (let i = 0; i < offerBox.length; i++ ) {
+    if (offerBox[i].classList.contains('meat-wrapper')) {
+      meatPopUp.classList.add('popup_appear');
+    }
+    else if (offerBox[i].classList.contains('app-wrapper')) {
+      appPopUp.classList.add('popup_appear');
+    }
+    else if (offerBox[i].classList.contains('drink-wrapper')) {
+      drinkPopUp.classList.add('popup_appear');
+    }
+  }
+  overlayPopUp.classList.add('overlay-popup');
+}
 
 // make sure make a function that will be used on multiple variables.
+
+// nav link functionality
+
+let modalLinks = document.querySelectorAll('.nav_modal-link');
+
+for (let i = 0; i < modalLinks.length; i++) {
+  modalLinks[i].addEventListener('click', function() {
+    navBar.classList.remove('nav_view-change');
+    navModalList.classList.remove('text_appear');
+    
+  })
+}
