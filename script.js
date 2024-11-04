@@ -46,8 +46,6 @@ navBtn.addEventListener('click', function() {
 
 
 // offering section for pop ups
-let offerBox = document.querySelectorAll('.offering-wrapper');
-
 let meatBox = document.querySelector('.meat-wrapper');
 let meatPopUp = document.querySelector('.meat-popup');
 
@@ -65,19 +63,16 @@ let exitBtn = document.querySelector('.exit_btn');
 meatBox.addEventListener('click', function() {
   meatPopUp.classList.add('popup_appear');
   overlayPopUp.classList.add('overlay-popup');
-  // openPopUp();
 });
 
 appBox.addEventListener('click', function() {
   appPopUp.classList.add('popup_appear');
   overlayPopUp.classList.add('overlay-popup');
-  // openPopUp();
 })
 
 drinkBox.addEventListener('click', function() {
   drinkPopUp.classList.add('popup_appear');
   overlayPopUp.classList.add('overlay-popup');
-  // openPopUp();
 })
 
 exitBtn.addEventListener('click', function() {
@@ -103,25 +98,6 @@ function exitPopUp() {
   }
   overlayPopUp.classList.remove('overlay-popup');
 }
-
-// function openPopUp() {
-//   for (let i = 0; i < offerBox.length; i++ ) {
-//     if (offerBox[i].classList.contains('meat-wrapper')) {
-//       meatPopUp.classList.add('popup_appear');
-//     }
-//     else if (offerBox[i].classList.contains('app-wrapper')) {
-//       appPopUp.classList.add('popup_appear');
-//     }
-//     else if (offerBox[i].classList.contains('drink-wrapper')) {
-//       drinkPopUp.classList.add('popup_appear');
-//     }
-//   }
-//   overlayPopUp.classList.add('overlay-popup');
-// }
-
-// make sure make a function that will be used on multiple variables.
-
-// nav link functionality
 
 let modalLinks = document.querySelectorAll('.nav_modal-link');
 
