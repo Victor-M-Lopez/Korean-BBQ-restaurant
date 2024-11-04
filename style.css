@@ -32,7 +32,7 @@ p,a,span,button, li {
 
 a {
 	font-family: 'Poppins';
-	font-weight: 200;
+	font-weight: 300;
 	color: #fff;
 }
 
@@ -231,7 +231,7 @@ nav {
 }
 
 .sub-heading {
-	font-weight: 200;
+	font-weight: 400;
 	text-align: center;
 }
 
@@ -353,7 +353,7 @@ nav {
 .about_text-container {
 	width: 100%;
 	color: #fff;
-	font-weight: 200;
+	font-weight: 400;
 	line-height: 2.5rem;
 	z-index: 80;
 
