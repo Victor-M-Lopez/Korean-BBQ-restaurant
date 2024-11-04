@@ -63,15 +63,21 @@ let overlayPopUp = document.querySelector('.offering_popup-overlay');
 let exitBtn = document.querySelector('.exit_btn');
 
 meatBox.addEventListener('click', function() {
-  openPopUp();
+  meatPopUp.classList.add('popup_appear');
+  overlayPopUp.classList.add('overlay-popup');
+  // openPopUp();
 });
 
 appBox.addEventListener('click', function() {
-  openPopUp();
+  appPopUp.classList.add('popup_appear');
+  overlayPopUp.classList.add('overlay-popup');
+  // openPopUp();
 })
 
 drinkBox.addEventListener('click', function() {
-  openPopUp();
+  drinkPopUp.classList.add('popup_appear');
+  overlayPopUp.classList.add('overlay-popup');
+  // openPopUp();
 })
 
 exitBtn.addEventListener('click', function() {
@@ -98,20 +104,20 @@ function exitPopUp() {
   overlayPopUp.classList.remove('overlay-popup');
 }
 
-function openPopUp() {
-  for (let i = 0; i < offerBox.length; i++ ) {
-    if (offerBox[i].classList.contains('meat-wrapper')) {
-      meatPopUp.classList.add('popup_appear');
-    }
-    else if (offerBox[i].classList.contains('app-wrapper')) {
-      appPopUp.classList.add('popup_appear');
-    }
-    else if (offerBox[i].classList.contains('drink-wrapper')) {
-      drinkPopUp.classList.add('popup_appear');
-    }
-  }
-  overlayPopUp.classList.add('overlay-popup');
-}
+// function openPopUp() {
+//   for (let i = 0; i < offerBox.length; i++ ) {
+//     if (offerBox[i].classList.contains('meat-wrapper')) {
+//       meatPopUp.classList.add('popup_appear');
+//     }
+//     else if (offerBox[i].classList.contains('app-wrapper')) {
+//       appPopUp.classList.add('popup_appear');
+//     }
+//     else if (offerBox[i].classList.contains('drink-wrapper')) {
+//       drinkPopUp.classList.add('popup_appear');
+//     }
+//   }
+//   overlayPopUp.classList.add('overlay-popup');
+// }
 
 // make sure make a function that will be used on multiple variables.
 
