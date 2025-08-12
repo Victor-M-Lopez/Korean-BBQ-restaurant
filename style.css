@@ -24,6 +24,11 @@ h1,h2,h3,h4 {
 	font-family: "Playfair", serif;
 }
 
+.rest {
+	margin-top: 12px;
+	color: #E5D679;
+}
+
 p,a,span,button, li {
 	font-family: "Source Serif 4", serif;
 	text-decoration: none;
@@ -782,7 +787,7 @@ footer {
 	}
 
 	footer {
-		height: 770px;
+		height: 800px;
 	}
 
 	.location_text-container {
